@@ -1,0 +1,153 @@
+body { 
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F3EF;
+    color: #2C302E;
+    line-height: 1.6;
+}
+
+header { 
+    background: #2C302E; 
+    color: #F5F3EF;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+nav a {
+    color: #F5F3EF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C8A279;
+}
+
+/* Home Page Hero Section */
+.hero {
+    background-color: #2C302E;
+    color: #F5F3EF;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid #C8A279;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #F5F3EF;
+    border: none;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 1rem auto 1.5rem auto;
+}
+
+.cta-button {
+    background-color: #C8A279;
+    color: #2C302E;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.cta-button:hover {
+    background-color: #5A7263;
+    color: #F5F3EF;
+}
+
+/* Home Page Main Content Container */
+.home-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.home-main section {
+    margin-bottom: 2.5rem;
+}
+
+/* Two-column layout grid (Used ONLY on About Page) */
+.container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar-l { 
+    background: #E8E4DC; 
+    padding: 1.5rem; 
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.sidebar-l h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    border-bottom: 2px solid #C8A279;
+    padding-bottom: 0.3rem;
+}
+
+.about-main { 
+    background: #F5F3EF; 
+    padding: 1rem; 
+}
+
+/* Shared Headings & Blockquotes */
+h2 {
+    color: #2C302E;
+    border-bottom: 2px solid #C8A279;
+    padding-bottom: 0.3rem;
+    margin-top: 0;
+}
+
+h2:not(:first-child) {
+    margin-top: 2rem;
+}
+
+blockquote {
+    background-color: #E8E4DC;
+    border-left: 4px solid #C8A279;
+    margin: 0;
+    padding: 1.2rem;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0 0 0.5rem 0;
+}
+
+blockquote cite {
+    font-style: normal;
+    font-weight: bold;
+    color: #5A7263;
+    font-size: 0.9rem;
+}
+
+footer { 
+    background: #2C302E; 
+    color: #F5F3EF; 
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

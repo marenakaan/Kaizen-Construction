@@ -38,7 +38,6 @@ nav a:hover {
     color: #C8A279;
 }
 
-/* Home Page Hero Section */
 .hero {
     background-color: #2C302E;
     color: #F5F3EF;
@@ -73,7 +72,6 @@ nav a:hover {
     color: #F5F3EF;
 }
 
-/* Home Page Main Content Container */
 .home-main {
     max-width: 800px;
     margin: 0 auto;
@@ -84,7 +82,6 @@ nav a:hover {
     margin-bottom: 2.5rem;
 }
 
-/* Two-column layout grid (Used ONLY on About Page) */
 .container {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -113,7 +110,6 @@ nav a:hover {
     padding: 1rem; 
 }
 
-/* Shared Headings & Blockquotes */
 h2 {
     color: #2C302E;
     border-bottom: 2px solid #C8A279;
@@ -140,7 +136,7 @@ blockquote p {
 blockquote cite {
     font-style: normal;
     font-weight: bold;
-    color: #5A7263;
+    color: #2C302E;
     font-size: 0.9rem;
 }
 

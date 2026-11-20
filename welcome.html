@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kaizen Construction | Consultation Request Received</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .confirmation-box {
+      background-color: #E8E4DC;
+      padding: 2rem;
+      border-radius: 6px;
+      border-left: 4px solid #7A8B79;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Kaizen Construction</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="confirmation-box">
+      <h2>Thank You — Your Request Was Submitted!</h2>
+      <p>We have received your consultation request and will follow up with you as soon as possible.</p>
+      <div id="submission-details"></div>
+      <p style="margin-top: 1.5rem;"><a href="index.html" class="cta-button">Return to Home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kaizen Construction LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const email = params.get('email');
+    const phone = params.get('phone');
+    const project = params.get('project');
+
+    let html = '';
+    if (name) html += `<p><strong>Name:</strong> ${escapeHtml(name)}</p>`;
+    if (email) html += `<p><strong>Email:</strong> ${escapeHtml(email)}</p>`;
+    if (phone) html += `<p><strong>Phone:</strong> ${escapeHtml(phone)}</p>`;
+    if (project) html += `<p><strong>Project Details:</strong> ${escapeHtml(project)}</p>`;
+
+    if (html !== '') {
+      document.getElementById('submission-details').innerHTML = html;
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+  </script>
+</body>
+
+</html>
